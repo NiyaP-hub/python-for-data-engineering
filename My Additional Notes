@@ -1,0 +1,20 @@
+
+
+ You need both to run Python in VS Code:
+
+Extension = Helper in the editor
+Interpreter = Engine that runs your code
+
+Python Extension (VS Code) : Adds Python support to VS Code. Installed via Extensions tab in VS Code
+Python Interpreter (System): Actually runs Python code.  Installed via Terminal or python.org
+
+*VS Code Python extension like a translator — it helps VS Code understand.The Python Extension in VS Code: adds features to VS Code, like:
+
+Syntax highlighting
+Code suggestions
+Debugging tools
+Jupyter notebook support
+
+* Interpreter is the real Python engine that runs your .py files
+
+
