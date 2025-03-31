@@ -23,7 +23,8 @@ USE CASE : Read, clean, transform, join, summarize, or analyze structured data.
 
 NOTE: Pandas must be installed in your machine through command prompt :
 
-pip install pandas
+    pip install pandas  //pip is Python’s package installer.This command uses pip to install the pandas library.
+
 
 IF you get a message saying could not found pip, it means your Python installation is missing the pip tool, 
 which is used to install packages like pandas
@@ -34,11 +35,15 @@ To install Pandas:
 
     Output might be: 
 
-    /usr/bin/python3
+    /usr/bin/python3           //The macOS system Python.Not recommended (restricted, outdated)
     or
-    /opt/homebrew/bin/python3
+    /opt/homebrew/bin/python3  //Python installed via Homebrew.
     or
-    /usr/local/bin/python3
+    /usr/local/bin/python3     //Python installed via python.org installer
+
+python3 -m ensurepip --upgrade   // This asks Python to install pip if it’s missing.
+
+python3 -m pip install pandas  //next , install pandas
 
 
 
