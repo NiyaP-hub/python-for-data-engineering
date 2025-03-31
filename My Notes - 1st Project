@@ -45,24 +45,34 @@ python3 -m ensurepip --upgrade   // This asks Python to install pip if it’s mi
 
 python3 -m pip install pandas  //next , install pandas
 
+===============================EXECUTING PYTHON CODE=====================
 
-
-
-=========================
-To execute the above code in Visual Studio Code 
+OPTION 1: TO EXECUTE CODE IN Visual Studio Code :
 
 Open new editor and save as .py 
 Type the code in this editor
-By default , VSCode will look for the cs file in the current folder (i.e. where your python code (.py) file is saved
-In order to find your current folder - > VS Code Editor -> Terminal (top ribbon) ->New Terminal -> pwd (gives your current directory)
+By default , VSCode will look for the file in the current folder (i.e. where your python code (.py) file is saved)
+In order to find your current folder - > In VS Code Editor , go to Terminal (top ribbon) ->New Terminal -> pwd (gives your current directory)
       e.g. /Users/niya/Documents/python-learning
 If the csv file is not in the current folder, you need to give full path in your command:
       df = pd.read_csv("/Users/niya/Desktop/data/sales.csv")
 
 
-=========
+OPTION 2: TO EXECUTE CODE IN TERMINAL :
 
-To execute in browser 
+python3  //Tells Terminl I want to use Python 3 interpreter to run a Python command or script.
+
+e.g.1: python3 
+       my_script.py
+
+e.g.2:  python3 ///Tells Terminl I want to use Python 3 interpreter to run a Python command or script. Next, type your code
+
+        import pandas as pd  //
+        df = pd.read_csv("sales.csv")
+        print(df.head())
+
+OPTION 3: TO EXECUTE CODE IN JUPYTER NOTEBOOK :
+
 
 
 
