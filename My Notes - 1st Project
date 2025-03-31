@@ -4,7 +4,36 @@ df = pd.read_csv("sales.csv")      //Use pandas (alias pd) to read the file name
 print(df.head())                   //shows just the top of the table (5 rows). 
                                    // df = short for DataFrame — a table of data (like a mini Excel sheet)
 
+==========================
+*PANDAS library is used to work with structured data — like tables in Excel, CSV, SQL, APIs that return structured data
+
+USE CASE : Read, clean, transform, join, summarize, or analyze structured data.
+    
+       - You have CSV/Excel/SQL data	Read and load the data
+       - Data has missing values	Fill or remove them
+       - You need to filter rows/columns	Use slicing or conditions
+       - You want to summarize	Use groupby, mean, sum, etc.
+       - You want to join tables	Use merge() like SQL JOIN
+       - You’re automating reports	Script it once, re-run anytime
+       - Excel is slow with big data	pandas handles large datasets faster
 
 
 =========================
+
+To execute the above code in Visual Studio Code :
+
+Open new editor and save as .py 
+Type the code in this editor
+By default , VSCode will look for the cs file in the current folder (i.e. where your python code (.py) file is saved
+In order to find your current folder - > VS Code Editor -> Terminal (top ribbon) ->New Terminal -> pwd (gives your current directory)
+      e.g. /Users/niya/Documents/python-learning
+If the csv file is not in the current folder, you need to give full path in your command:
+      df = pd.read_csv("/Users/niya/Desktop/data/sales.csv")
+
+
+=========
+
+To execute in browser 
+
+
 
