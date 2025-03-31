@@ -20,7 +20,31 @@ USE CASE : Read, clean, transform, join, summarize, or analyze structured data.
 
 =========================
 
-To execute the above code in Visual Studio Code (Note : you need to have Pandas extension installed in VS)
+
+NOTE: Pandas must be installed in your machine through command prompt :
+
+pip install pandas
+
+IF you get a message saying could not found pip, it means your Python installation is missing the pip tool, 
+which is used to install packages like pandas
+
+To install Pandas:
+
+    which python3   //Check Which Python You’re Using
+
+    Output might be: 
+
+    /usr/bin/python3
+    or
+    /opt/homebrew/bin/python3
+    or
+    /usr/local/bin/python3
+
+
+
+
+=========================
+To execute the above code in Visual Studio Code 
 
 Open new editor and save as .py 
 Type the code in this editor
