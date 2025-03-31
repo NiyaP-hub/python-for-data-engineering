@@ -3,6 +3,17 @@ Step 1: Intsall Python
 (already installed in Mac)
  Check version : python --version
 
+       If not already present, you can install or fix Python + pip completely by reinstalling from:
+       
+       👉 https://www.python.org/downloads/
+       
+       Download the latest Python 3.x for macOS
+       During installation, make sure “Add Python to PATH” is checked
+       Once installed, open terminal and try:
+             
+               python3 -m pip install pandas
+
+
 Step 2: Install jupyter notebook
 *A notebook is a rich, interactive way to write code, explain it, and see results — all in one place.
 
