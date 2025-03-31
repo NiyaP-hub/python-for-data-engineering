@@ -14,7 +14,11 @@ Step 1: Intsall Python
                python3 -m pip install pandas
       Option 2: Install via Homebrew
 
-              brew install python
+              brew install python  //install python using brew
+              which python3  // Check Your Python Version & Location. Output should show : /opt/homebrew/bin/python3
+              python3 --version  //Check python's version once installed
+              pip3 --version     //Check pip's (python package installer's version once installed
+
 
 
 Step 2: Install jupyter notebook
