@@ -20,7 +20,7 @@ USE CASE : Read, clean, transform, join, summarize, or analyze structured data.
 
 =========================
 
-To execute the above code in Visual Studio Code :
+To execute the above code in Visual Studio Code (Note : you need to have Pandas extension installed in VS)
 
 Open new editor and save as .py 
 Type the code in this editor
