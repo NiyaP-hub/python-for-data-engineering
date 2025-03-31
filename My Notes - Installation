@@ -1,33 +1,45 @@
 
+Step 1: Intsall Python
+(already installed in Mac)
+ Check version : python --version
 
-You need below to run Python in VS Code:
-
-Python Extension (By Microsoft ) = Helper in the editor
-Interpreter = Engine that runs your code
-Jupyter Extension (By Microsoft) = The VS Code plugin that lets you work with .ipynb notebooks inside VS Code
-
-Python Extension (VS Code) : Adds Python support to VS Code. Installed via Extensions tab in VS Code
-Python Interpreter (System): Actually runs Python code.  Installed via Terminal or python.org
-
-*VS Code Python extension like a translator — it helps VS Code understand.The Python Extension in VS Code: adds features to VS Code, like:
-
-Syntax highlighting
-Code suggestions
-Debugging tools
-Jupyter notebook support
-
-* Interpreter is the real Python engine that runs your .py files
-
-Interpreter = The car engine
-Jupyter Extension = The dashboard that lets you drive and see what’s happening.
-Without the Jupyter extension, you won’t get the notebook UI (cells, run buttons, output areas, markdown formatting, etc.) in VS Code.
-
-================
-If you want to instead run notebooks in the browser :
-pip install notebook  --- install through command prompt
-jupyter notebook      --  once installed, use this command in the command prompt to lauch the notebook in the browser
-
+Step 2: Install jupyter notebook
 *A notebook is a rich, interactive way to write code, explain it, and see results — all in one place.
+
+      Option 1 : Through Terminal
+                 pip install jupyter notebook //  install through command prompt
+                 jupyter notebook      //  once installed, use this command in the command prompt to lauch the notebook in the browser
+
+      Option 2 : Instead of installing jupyter notebook, use Google Colab and use notebook from the there
+
+      Note: you can also run the code in the command prompt i.e. terminal itself as well instead of notebook but notebook is a rich UI
+
+      Option 3 : You can do everything in one place using Visual Studio Code instead
+
+              You need below to run Python in VS Code:
+              
+              1. Python Extension (By Microsoft ) = Helper in the editor
+              2. Interpreter = Engine that runs your code
+              3. Jupyter Extension (By Microsoft) = The VS Code plugin that lets you work with .ipynb notebooks inside VS Code
+              
+              Python Extension (VS Code) : Adds Python support to VS Code. Installed via Extensions tab in VS Code
+              Python Interpreter (System): Actually runs Python code.  Installed via Terminal or python.org
+              
+              *VS Code Python extension like a translator — it helps VS Code understand.
+              The Python Extension in VS Code: adds features to VS Code, like:
+              
+                  Syntax highlighting
+                  Code suggestions
+                  Debugging tools
+                  Jupyter notebook support
+              
+              * Interpreter is the real Python engine that runs your .py files
+              
+              Interpreter = The car engine
+              Jupyter Extension = The dashboard that lets you drive and see what’s happening.
+              Without the Jupyter extension, you won’t get the notebook UI (cells, run buttons, output areas, markdown formatting, etc.) in VS Code.
+              
+              
 
 
 
