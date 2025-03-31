@@ -4,7 +4,7 @@ You need below to run Python in VS Code:
 
 Python Extension (By Microsoft ) = Helper in the editor
 Interpreter = Engine that runs your code
-Jupyter Extension = The VS Code plugin that lets you work with .ipynb notebooks inside VS Code
+Jupyter Extension (By Microsoft) = The VS Code plugin that lets you work with .ipynb notebooks inside VS Code
 
 Python Extension (VS Code) : Adds Python support to VS Code. Installed via Extensions tab in VS Code
 Python Interpreter (System): Actually runs Python code.  Installed via Terminal or python.org
