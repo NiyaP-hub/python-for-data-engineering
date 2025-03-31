@@ -1,0 +1,10 @@
+==========Code============
+import pandas as pd                //import/load the pandas library (a tool for working with tables). pd is the alias
+df = pd.read_csv("sales.csv")      //Use pandas (alias pd) to read the file named sales.csv, and store it in a variable called df.
+print(df.head())                   //shows just the top of the table (5 rows). 
+                                   // df = short for DataFrame — a table of data (like a mini Excel sheet)
+
+
+
+=========================
+
