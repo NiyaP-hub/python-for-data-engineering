@@ -112,6 +112,11 @@ print(df["Col1"], df["Col2"])	//Prints them one after another — not aligned
 
 //Save Filtered Data to a New CSV
 
+expensive_products = df[df["Price"] > 1000]  
+expensive_products.to_csv("expensive_products.csv", index=False)    //pandas function to save data in CSV format. index=False tells not to include row numbers in 
+                                                                    //the saved file
+
+
 
 
 
