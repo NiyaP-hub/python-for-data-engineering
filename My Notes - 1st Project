@@ -75,4 +75,50 @@ OPTION 3: TO EXECUTE CODE IN JUPYTER NOTEBOOK :
 
 
 
+===========================================PANDAS FUNCTIONS==================
+
+Working with CSV:
+
+//Load CSV
+      import pandas as p
+      df=p.read_csv("/Users/niyatee/Documents/PYTHON/apple_products.csv")
+      print(df.head())
+
+//View Basic Info
+
+      print(df.info())
+
+//Filtering Options
+
+      print(df[df["In Stock"]==True])
+      print(df[df["Price"]> 1000])
+
+
+//Create New Column
+  //Prints 2 separate Series, one below the other
+      df["New_Col_revenue"] = df["Price"] * df["Units Sold"]   
+      print(df["Product"],df["New_Col_revenue"])   
+
+  //Prints a DataFrame with both columns side-by-side 
+      df["New_Col_revenue"] = df["Price"] * df["Units Sold"]   
+      print(df[["Product", "New_Col_Revenue"]])	  
+
+-----
+Code	                        What it Does
+df["Column"]	                //Returns a Series (single column)
+df[["Col1", "Col2"]]	        //Returns a DataFrame with both columns side by side
+print(df["Col1"], df["Col2"])	//Prints them one after another — not aligned
+----
+
+//Save Filtered Data to a New CSV
+
+
+
+
+
+
+
+
+
+
 
