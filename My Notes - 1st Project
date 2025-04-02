@@ -88,6 +88,9 @@ Working with CSV:
 
       print(df.info())
 
+//View all columns 
+      print(df.columns)
+
 //Filtering Options
 
       print(df[df["In Stock"]==True])
@@ -116,6 +119,9 @@ expensive_products = df[df["Price"] > 1000]
 expensive_products.to_csv("expensive_products.csv", index=False)    //pandas function to save data in CSV format. index=False tells not to include row numbers in 
                                                                     //the saved file
 
+df["Product Name"].head()              //displays just top 5 rows from this column vertically/columnwise
+
+list(df["Product Name"].head())        //displays just top 5 rows from this list horizontally separated by commas
 
 df["Price"].max()                      //max value from this series (i.e. column)
 
@@ -139,6 +145,14 @@ lsit(df["Product"] [0].lower()         //displays first value from the list in L
 
 list(df["Product"] [3].upper() [6:11]  //displays 4th value from the list in UPPER CASE and just the string from 6th to 11th 
                                          i.e for APPLE WATCH will only display WATCH
+list(df["Product"] [3].upper() [6:11].strip() //same as above, additionally strips off any blank spaces.
+
+list(df["Product"].str.upper())       //converts each string in the column/series into UPPER CASE 
+
+
+df["Product Name"].str.upper()[1:10].str[6:16]    //[1:10] slices the rows in the column, not the string 
+                                                     .str[6:16] is substring slicing
+
 
 
 
