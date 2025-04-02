@@ -105,9 +105,9 @@ Working with CSV:
 
 -----
 Code	                        What it Does
-df["Column"]	                //Returns a Series (single column)
-df[["Col1", "Col2"]]	        //Returns a DataFrame with both columns side by side
-print(df["Col1"], df["Col2"])	//Prints them one after another — not aligned
+df["Column"]	                      //Returns a Series (single column)
+df[["Col1", "Col2"]]	              //Returns a DataFrame with both columns side by side
+print(df["Col1"], df["Col2"])	      //Prints them one after another — not aligned
 ----
 
 //Save Filtered Data to a New CSV
@@ -117,25 +117,28 @@ expensive_products.to_csv("expensive_products.csv", index=False)    //pandas fun
                                                                     //the saved file
 
 
-df["Price"].max()            //max value from this series (i.e. column)
+df["Price"].max()                      //max value from this series (i.e. column)
 
-df["Price"].min()            //min value from this series (i.e. column)
+df["Price"].min()                      //min value from this series (i.e. column)
 
-df[df["Price"]==1799]        //filter equal to 
+df[df["Price"]==1799]                  //filter equal to 
+ 
+df[df["Price"]<500]                    //filter less than to find which products are less than 500
 
-df[df["Price"]<500]          //filter less than to find which products are less than 500
+df["Product"]                          //to get the series (vertical list) of just one column 
 
-df["Product"]                //to get the series (vertical list) of just one column 
+list(df["Product"])                    //to display column as a list like an array (i.e. displays column values horizontally separated by commas)
 
-list(df["Product"])         //to display column as a list like an array (i.e. displays column values horizontally separated by commas)
+list(df["Product"] [0]                 //displays the 1st value from the list
 
-list(df["Product"] [0]      //displays the 1st value from the list
+lsit(df["Product"] [3]                 //displays the 4th value in the last
 
-lsit(df["Product"] [3]      //displays the 4th value in the last
+lsit(df["Product"] [0].upper()         //displays first value from the list in UPPER CASE
 
-lsit(df["Product"] [0].upper() //displays first value from the list in UPPER CASE
+lsit(df["Product"] [0].lower()         //displays first value from the list in LOWER CASE
 
-lsit(df["Product"] [0].lower() //displays first value from the list in LOWER CASE
+list(df["Product"] [3].upper() [6:11]  //displays 4th value from the list in UPPER CASE and just the string from 6th to 11th 
+                                         i.e for APPLE WATCH will only display WATCH
 
 
 
