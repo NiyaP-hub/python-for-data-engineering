@@ -153,8 +153,15 @@ list(df["Product"] [3].upper() [6:11]  //displays 4th value from the list in UPP
                                          i.e for APPLE WATCH will only display WATCH
 list(df["Product"] [3].upper() [6:11].strip() //same as above, additionally strips off any blank spaces.
 
-list(df["Product"].str.upper())       //converts each string in the column/series into UPPER CASE 
 
+//Use .str when you want to apply string operations (like slicing, replacing, or checking substrings) to an entire column of a DataFrame.
+
+
+df["Product Name"].str[:20]            // First 20 characters of each product name
+df["Brand"].str.lower()                // Convert all brand names to lowercase
+df["Brand"].str.upper()                // Convert to uppercase
+
+list(df["Product"].str.upper())       //converts each string in the column/series into UPPER CASE 
 
 df["Product Name"].str.upper()[1:10].str[6:16]    //[1:10] slices the rows in the column, not the string 
                                                      .str[6:16] is substring slicing
