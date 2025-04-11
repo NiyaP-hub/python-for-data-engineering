@@ -1,4 +1,10 @@
 
+         ---Python – the base language
+         ---pip – the package installer (usually comes with Python)
+         ---pandas – the actual data analysis library
+         ---jupyter – the interactive notebook environment
+
+
 Step 1: Intsall Python (This is the programming language itself.)
 
 (already installed in Mac), then Check version : python --version
