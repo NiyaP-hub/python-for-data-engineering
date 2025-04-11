@@ -160,8 +160,10 @@ list(df["Product"] [3].upper() [6:11].strip() //same as above, additionally stri
 df["Product Name"].str[:20]            // First 20 characters of each product name
 df["Brand"].str.lower()                // Convert all brand names to lowercase
 df["Brand"].str.upper()                // Convert to uppercase
+df["Product Name"].str.contains("iPhone")
+df["Product Name"].str.startswith("APPLE")
 
-list(df["Product"].str.upper())       //converts each string in the column/series into UPPER CASE 
+list(df["Product"].str.upper())        //converts each string in the column/series into UPPER CASE 
 
 df["Product Name"].str.upper()[1:10].str[6:16]    //[1:10] slices the rows in the column, not the string 
                                                      .str[6:16] is substring slicing
