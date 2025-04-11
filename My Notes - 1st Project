@@ -53,7 +53,7 @@ python3 -m pip install pandas  //next , install pandas
 OPTION 1: TO EXECUTE CODE IN Visual Studio Code :
 
 Open new editor and save as .py 
-Type the code in this editor
+Type the above code in this editor 
 By default , VSCode will look for the file in the current folder (i.e. where your python code (.py) file is saved)
 In order to find your current folder - > In VS Code Editor , go to Terminal (top ribbon) ->New Terminal -> pwd (gives your current directory)
       e.g. /Users/niya/Documents/python-learning
@@ -75,8 +75,9 @@ e.g.2:  python3 ///Tells Terminl I want to use Python 3 interpreter to run a Pyt
         print(df.head())
 
 OPTION 3: TO EXECUTE CODE IN JUPYTER NOTEBOOK :
-
-
+To launch Jupyer notebook : type below in command prompt (i.e. Terminal in Mac)
+    
+         jupyter notebook
 
 ===========================================PANDAS FUNCTIONS==================
 
