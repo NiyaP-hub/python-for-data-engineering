@@ -94,6 +94,8 @@ Working with CSV:
 
 //View all columns 
       print(df.columns)
+      print(df.columns.tolist())
+
 
 //Filtering Options
 
