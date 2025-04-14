@@ -69,15 +69,39 @@ The names you use when creating these labels need to follow a few rules:
 
 WORKING WITH DATA TYPES and DATA STRUCTURES
 
-1. Data Types (Basic types of individual values)
+🔹 1. Data Types (Basic types of individual values)
+
 Type	          Example    	    Description
 -----------------------------------------------
 int	          5, -1, 100	    Whole numbers
 float	          3.14, -2.5	    Decimal numbers
-str	          "Hello"	Text     (string)
-bool            True, False	   Boolean values (yes/no)
-NoneType	    None	Represents "no value"
+str	          "Hello"           Text (string)
+bool            True, False	    Boolean values (yes/no)
+NoneType	    None	          Represents "no value"
 
+🔸 2. Data Structures (Ways to store and organize multiple values)
+
+Structure	Example	                           Description
+-----------------------------------------------------------------
+list	      [1, 2, 3]	                           Ordered, changeable, allows duplicates
+tuple   	(1, 2, 3)	                           Ordered, unchangeable
+set	      {1, 2, 3}	                           Unordered, no duplicates
+dict	      {"name": "Niyatee", "age": 16}	   Key-value pairs
+
+
+
+🧺 1. List – Ordered, Changeable, Allows Duplicates
+      ✅ Example: Changing a value in a list
+
+            fruits = ["apple", "banana", "mango"]
+            print(f"Before: {fruits}")
+            
+            # Change the first item (index 0)
+            fruits[0] = "grape"
+            print(f"After: {fruits}")
+
+output : Before: ['apple', 'banana', 'mango']
+         After: ['grape', 'banana', 'mango']
 
 
 
