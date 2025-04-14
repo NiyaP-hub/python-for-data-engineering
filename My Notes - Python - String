@@ -46,11 +46,11 @@ WORKING WITH ARITHMATIC :
 
 Order of Operations in Python = PEMDAS
 
-PEMDAS	                          BODMAS	                                        Meaning
-P = Parentheses	                    B = Brackets	                                  () → Grouping
-E = Exponents	                    O = Orders	                                  Powers/Roots (2**3, √9)
-MD = Multiplication & Division	  DM = Division & Multiplication	                Left to right
-AS = Addition & Subtraction	        AS = Addition & Subtraction	                      Left to right
+PEMDAS	                               BODMAS	                                        Meaning
+P = Parentheses	                         B = Brackets	                                  () → Grouping
+E = Exponents	                         O = Orders	                                        Powers/Roots (2**3, √9)
+MD = Multiplication & Division	       DM = Division & Multiplication	                Left to right
+AS = Addition & Subtraction	             AS = Addition & Subtraction	                      Left to right
 
 
 
