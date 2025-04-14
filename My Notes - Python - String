@@ -156,7 +156,20 @@ output : Before: ['apple', 'banana', 'mango']
               Ex.3: del fruits[0]               # Delete by index
 
 6.)Length of List
-             Ex.1:   print(len(fruits))            # Number of items
+             Ex.1:   print(len(fruits_list))            # Number of items
+
+7.) Extend List 
+             Ex.1:    
+                list1 = ["apple", "banana"]
+                list2 = ["mango", "grape"]
+                list1.extend(list2)
+                print(list1)
+
+            Ex.2: 
+                  l = [1, 2, 3]
+                  l.extend([4, 5, 6])
+                  print(l)
+
 
 4.) Basic List Methods
 4.) Nesting Lists
