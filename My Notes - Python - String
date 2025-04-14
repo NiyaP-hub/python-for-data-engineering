@@ -1,1 +1,31 @@
 
+String Formatting :
+
+Method 1:
+========
+%s is a placeholder for a string. 
+%d is for integers
+%f is for floating point numbers
+
+      Exampple 1: # Single Placeholder
+                  name="Niyatee"
+                  print("My name is %s" % name)
+      
+      Example 2 : # Multiple Placeholders
+                  name="Niyatee"
+                  age=16
+                  married=True
+      print("My name is %s, my age is %d, and it is %s that I am married" % (name, age, married))
+
+
+Method 2:Using 2. f-strings (Python 3.6+ — most preferred!)
+========
+What is an f-string?
+f-string stands for formatted string literal.
+You add an f before your string and put variables inside {} — Python will automatically replace them with their values.
+
+      Example: print(f"My name is {name}, my age is {age}. Married :{married}")
+
+Method 3: .format() method
+========
+     Example:  print("Hello, {}!".format(name))
