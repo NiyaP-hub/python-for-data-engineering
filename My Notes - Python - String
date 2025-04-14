@@ -53,5 +53,31 @@ MD = Multiplication & Division	       DM = Division & Multiplication	           
 AS = Addition & Subtraction	             AS = Addition & Subtraction	                      Left to right
 
 
+WORKING WITH VARIABLES  :
+
+We use a single equals sign to assign labels to variables. Let's see a few examples of how we can do this.
+The names you use when creating these labels need to follow a few rules:
+
+1. Names can not start with a number.
+2. There can be no spaces in the name, use _ instead.
+3. Can't use any of these symbols :'",<>/?|\()!@#$%^&*~-+
+4.Are case-sensitive (Name and name are different)
+5.Can contain letters, numbers, and underscores
+
+
+===================================================================================================================================
+
+WORKING WITH DATA TYPES and DATA STRUCTURES
+
+1. Data Types (Basic types of individual values)
+Type	          Example    	    Description
+-----------------------------------------------
+int	          5, -1, 100	    Whole numbers
+float	          3.14, -2.5	    Decimal numbers
+str	          "Hello"	Text     (string)
+bool            True, False	   Boolean values (yes/no)
+NoneType	    None	Represents "no value"
+
+
 
 
