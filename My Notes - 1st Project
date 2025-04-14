@@ -173,8 +173,41 @@ df["Product Name"].str.upper()[1:10].str[6:16]    //[1:10] slices the rows in th
 
 
 
+What is a DataFrame?
+A DataFrame is a 2D table-like structure in Python provided by the Pandas library. It’s one of the most powerful and commonly used tools in data analysis.
+
+Think of it like an Excel sheet:
+Rows = records
+Columns = fields/features
 
 
+ // You can create a DataFrame from a data structure like a dictionary, list of lists, list of dicts, etc.
+//What pd.DataFrame(data) does is it takes your raw structured data & converts it into a table you can work with.
+
+✅ Example 1: From a dictionary. Here each key becomes a column name. Each value (a list) becomes the column data.
+==========================
+
+      import pandas as pd
+      data = {
+          'Name': ['Asha', 'Ravi', 'Meena'],
+          'Age': [28, 34, 25],
+          'City': ['Mumbai', 'Delhi', 'Chennai']
+      }
+       
+      df = pd.DataFrame(data) //This is how you create a dataframe
+      print(df)
+
+✅ Example 2: From a list of dictionaries
+========================
+
+data = [
+    {'Name': 'Asha', 'Age': 28, 'City': 'Mumbai'},
+    {'Name': 'Ravi', 'Age': 34, 'City': 'Delhi'},
+    {'Name': 'Meena', 'Age': 25, 'City': 'Chennai'}
+]
+
+df = pd.DataFrame(data)
+print(df)
 
 
 
