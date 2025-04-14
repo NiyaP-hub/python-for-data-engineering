@@ -18,14 +18,21 @@ Method 1:
       print("My name is %s, my age is %d, and it is %s that I am married" % (name, age, married))
 
 
-Method 2:Using 2. f-strings (Python 3.6+ — most preferred!)
+
+Method 2: .format() method
+========
+     Example:  print("Hello, {}!".format(name))
+
+Method 3:Using 2. f-strings (Python 3.6+ — most preferred!)
 ========
 What is an f-string?
 f-string stands for formatted string literal.
 You add an f before your string and put variables inside {} — Python will automatically replace them with their values.
 
-      Example: print(f"My name is {name}, my age is {age}. Married :{married}")
+      Example 1: print(f"My name is {name}, my age is {age}. Married :{married}")
+                 output : My name is Niyatee, my age is 16.Married :True
 
-Method 3: .format() method
-========
-     Example:  print("Hello, {}!".format(name))
+      Example 2: print(f"My age is {age}. In 5 years I will be {age + 5}")   
+                 output : My age is 16. In 5 years I will be 21
+
+
