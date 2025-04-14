@@ -90,6 +90,26 @@ dict	      {"name": "Niyatee", "age": 16}	   Key-value pairs
 
 
 
+
+
+========================
+
+Identifying data types
+a=32.40
+print(type(a)) //to find out the data type of variable a
+
+========================
+
+LIST: WORKING WITH LISTS:
+What is a List?
+A list is an ordered, changeable (mutable) collection that allows duplicates. It can store:
+
+      Numbers
+      Strings
+      Booleans
+      Even other lists or mixed types
+
+
 🧺 1. List – Ordered, Changeable, Allows Duplicates
       ✅ Example: Changing a value in a list
 
@@ -102,6 +122,46 @@ dict	      {"name": "Niyatee", "age": 16}	   Key-value pairs
 
 output : Before: ['apple', 'banana', 'mango']
          After: ['grape', 'banana', 'mango']
+
+
+🔧 Common List Operations:
+
+1.) Creating lists
+               Ex.1 :fruits_list = ["apple","mango","grapes"]
+               Ex.2 :numbers_list = [1,2,3,4,5]
+               Ex.3 :Mixed_List = [10,"hello",TRUE]
+
+2.) Indexing  (Accessing List)
+                Ex.1 : print(fruits[0])     # Output: apple
+                Ex.2 : print(fruits[-1])    # Output: mango (last item)
+3.) Slicing means extracting a part (or slice) of a list (or string) using index ranges.
+    Syntax: list[start:stop]
+
+            fruits = ["apple", "banana", "mango", "grape", "orange"]
+            print(fruits[1:4])  # ['banana', 'mango', 'grape'] //1:4 means start at index 1 (banana) and go up to, but not including index 4 (orange)
+
+
+4.) Modifying Items
+              Ex.1: fruits_list[1]="Water Melon"
+                    print(fruits_list)  //replaces mango with Water Melon
+
+
+5.) Adding Items
+             Ex.1: fruits_list.append("orange")  # Add to end
+             Ex.2: fruits_list.insert(1,"orange")  # Insert at position
+
+5.) Removing Items
+              Ex.1: fruits_list.remove("apple") # Remove by value
+              Ex.2: fruits_list.pop()           # Remove last item
+              Ex.3: del fruits[0]               # Delete by index
+
+6.)Length of List
+             Ex.1:   print(len(fruits))            # Number of items
+
+4.) Basic List Methods
+4.) Nesting Lists
+5.) Introduction to List Comprehensions
+
 
 
 
