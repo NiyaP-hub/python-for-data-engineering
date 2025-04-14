@@ -172,6 +172,13 @@ output : Before: ['apple', 'banana', 'mango']
 
 
 4.) Basic List Methods
+
+            numbers = [4, 2, 9, 1]
+            numbers.sort()        # [1, 2, 4, 9]
+            numbers.reverse()     # [9, 4, 2, 1]
+            numbers.count(2)      # 1 (how many times 2 appears)
+            numbers.index(4)      # 1 (position of 4)
+
 4.) Nesting Lists
 5.) Introduction to List Comprehensions
 
