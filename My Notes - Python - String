@@ -257,15 +257,23 @@ Example Dictionary:
 🛠 Common Dictionary Methods:
 
 Method	Description
-.get(key)	Returns value or None if not found
+.get(key)	Returns value or None if not found ------    Ex.print(student.get("name"))     # Output: Riya
 .keys()	Returns all keys
-.values()	Returns all values
+.values()	Returns all values     ----------------------Ex.print(student.values())  # Output: dict_values(['Riya', 22, 'Python'])
+
 .items()	Returns key-value pairs
 .pop(key)	Removes key and returns its value
-.clear()	Empties the dictionary
+.clear()	Empties the dictionary --------------------  Ex. student.clear() print(student)     # Output: {}
 
 Python has a built-in method of doing a self subtraction or addition (or multiplication or division). We could have also used += or -= for the above statement. For example:
     Ex.my_dict = {'key1':'value1','key2':'value2'} 
        my_dict['key1']=123
        my_dict['key1'] = my_dict['key1'] + 123
+
+====================================================================
+
+Object Types in Python - Set and Boolean
+
+
+
 
