@@ -316,3 +316,24 @@ We can cast a list with multiple repeat elements to a set to get the unique elem
     set(l)
 -----
 
+
+What is a Boolean in Python?
+A Boolean (or bool) represents True or False — just two values.
+
+✅ Example:
+
+is_active = True
+is_logged_in = False
+
+Booleans are often used in conditions:
+            if is_active:
+                print("User is active.")
+
+You also get Boolean results from comparisons:
+    
+            print(5 > 3)        # True
+            print(10 == 5)      # False
+            print("a" in "cat") # True
+
+
+
