@@ -281,6 +281,38 @@ Python has a built-in method of doing a self subtraction or addition (or multipl
 
 Object Types in Python - Set and Boolean
 
+What is a Set in Python?
+A set is an unordered collection of unique elements. Think of it like a bag of distinct values — no duplicates allowed.
+
+my_set = {1, 2, 3, 2, 1}
+print(my_set)  # Output: {1, 2, 3}
+
+✅ Why does it still output {1, 2, 3}?
+Because a set automatically removes duplicates.
+Even though we typed repeated values (2, 1), Python internally stores only the unique elements.
+So yes — the original input has duplicates, but the resulting set doesn't. That's exactly how sets work!
 
 
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a.union(b))        # {1, 2, 3, 4, 5}
+print(a.intersection(b)) # {3}
+print(a.difference(b))   # {1, 2}
+
+a.add(6)      # Adds 6 to the set
+a.remove(2)   # Removes 2
+
+-----
+x = set()        # Creates an empty set
+x.add(1)         # Adds the value 1 to the set
+print(x)         # or just write x in an interactive shell to see the result
+Note : If you try x.add(1) again, it won’t duplicate it — because sets only store unique elements.
+
+We can cast a list with multiple repeat elements to a set to get the unique elements. For example:
+# Create a list with repeats
+    l = [1,1,2,2,3,4,5,6,1,1]
+# Cast as set to get unique values
+    set(l)
+-----
 
