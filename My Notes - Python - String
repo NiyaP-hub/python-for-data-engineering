@@ -134,11 +134,13 @@ output : Before: ['apple', 'banana', 'mango']
 2.) Indexing  (Accessing List)
                 Ex.1 : print(fruits[0])     # Output: apple
                 Ex.2 : print(fruits[-1])    # Output: mango (last item)
+
 3.) Slicing means extracting a part (or slice) of a list (or string) using index ranges.
-    Syntax: list[start:stop]
+    Syntax: list[start:stop] (start inclusive, stop exclusive)
 
             fruits = ["apple", "banana", "mango", "grape", "orange"]
             print(fruits[1:4])  # ['banana', 'mango', 'grape'] //1:4 means start at index 1 (banana) and go up to, but not including index 4 (orange)
+
 
 
 4.) Modifying Items
@@ -146,7 +148,7 @@ output : Before: ['apple', 'banana', 'mango']
                     print(fruits_list)  //replaces mango with Water Melon
 
 
-5.) Adding Items
+5.) Adding Items/Inserts
              Ex.1: fruits_list.append("orange")  # Add to end
              Ex.2: fruits_list.insert(1,"orange")  # Insert at position
 
