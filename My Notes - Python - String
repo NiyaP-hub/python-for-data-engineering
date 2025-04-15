@@ -223,6 +223,8 @@ my_dict = {
 
 1. Accessing a value by key
             Ex.print(my_dict["name"])   # Output: Alice
+            Ex.my_new_dict = {'name': ["darshil", 'jac', 'rahul'], "surname": ["parmar",'asd','asdas'], "age": [25,26,27]}
+               my_new_dict['name'][-1]
 
 2. Adding or updating a value
             
@@ -261,4 +263,9 @@ Method	Description
 .items()	Returns key-value pairs
 .pop(key)	Removes key and returns its value
 .clear()	Empties the dictionary
+
+Python has a built-in method of doing a self subtraction or addition (or multiplication or division). We could have also used += or -= for the above statement. For example:
+    Ex.my_dict = {'key1':'value1','key2':'value2'} 
+       my_dict['key1']=123
+       my_dict['key1'] = my_dict['key1'] + 123
 
