@@ -199,7 +199,7 @@ or when you need to loop through a sequence of numbers.
 
 UseCase 1. Looping a fixed number of times. Useful when you need to repeat logic 10 times.
       for i in range(10):
-    print(f"Loop iteration {i}")
+        print(f"Loop iteration {i}") #--must be indented block. 
 
 UseCase 2. Creating a list of numbers. Useful for initializing test data, dummy sequences, or indexes.
       numbers = list(range(10))
