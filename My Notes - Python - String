@@ -258,10 +258,10 @@ Example Dictionary:
 
 Method	Description
 .get(key)	Returns value or None if not found ------    Ex.print(student.get("name"))     # Output: Riya
-.keys()	Returns all keys
+.keys()	Returns all keys                   --------- Ex. print(student.keys())  # Output: dict_keys(['name', 'age', 'course'])
 .values()	Returns all values                 ----------Ex.print(student.values())  # Output: dict_values(['Riya', 22, 'Python'])
 .items()	Returns key-value pairs            ----------Ex. print(student.items()) # Output: dict_items([('name', 'Riya'), ('age', 22), ('course', 'Python')]) 
-.pop(key)	Removes key and returns its value
+.pop(key)	Removes key and returns its value  ----------Ex.age = student.pop("age")
 .clear()	Empties the dictionary --------------------  Ex. student.clear() print(student)     # Output: {}
 
 Python has a built-in method of doing a self subtraction or addition (or multiplication or division). We could have also used += or -= for the above statement. For example:
