@@ -256,6 +256,13 @@ Example Dictionary:
 
 🛠 Common Dictionary Methods:
 
+            # Sample dictionary
+            student = {
+                "name": "Riya",
+                "age": 22,
+                "course": "Python",
+            }
+
 Method	Description
 .get(key)	Returns value or None if not found ------    Ex.print(student.get("name"))     # Output: Riya
 .keys()	Returns all keys                   --------- Ex. print(student.keys())  # Output: dict_keys(['name', 'age', 'course'])
