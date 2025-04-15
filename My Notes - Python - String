@@ -238,5 +238,27 @@ my_dict = {
             if "name" in my_dict:
                 print("Found name!")
 
+5. Looping through a dictionary
 
+      for key, value in my_dict.items():
+          print(key, ":", value)
+
+Example Dictionary:
+
+      student = {
+          "id": 101,
+          "name": "Ravi",
+          "grades": [85, 90, 78],
+          "is_active": True
+      }
+
+🛠 Common Dictionary Methods:
+
+Method	Description
+.get(key)	Returns value or None if not found
+.keys()	Returns all keys
+.values()	Returns all values
+.items()	Returns key-value pairs
+.pop(key)	Removes key and returns its value
+.clear()	Empties the dictionary
 
