@@ -187,11 +187,6 @@ output : Before: ['apple', 'banana', 'mango']
             for fruit in fruits:
                 print(fruit)
 
-4.) Nesting Lists
-5.) Introduction to List Comprehensions
-
-
-============
 
 What is range(10)?
 range(10) is super commonly used in Python whenever you want to repeat something a specific number of times,
@@ -213,9 +208,35 @@ UseCase 3. Indexing over a list
           print(f"Item {i}: {items[i]}")
 
 
+==============
+What is a Python Dictionary?
+A dictionary is a collection of key-value pairs. It allows you to store and retrieve data based on keys (instead of positions like lists).
 
 
+my_dict = {
+    "name": "Alice",
+    "age": 30,
+    "city": "London"
+}
 
+✅ Basic Operations
+
+1. Accessing a value by key
+            Ex.print(my_dict["name"])   # Output: Alice
+
+2. Adding or updating a value
+            
+            my_dict["age"] = 31           # Update existing key
+            my_dict["country"] = "UK"     # Add new key
+
+3. Removing a key-value pair
+        
+           del my_dict["city"]
+
+4. Check if a key exists
+
+            if "name" in my_dict:
+                print("Found name!")
 
 
 
