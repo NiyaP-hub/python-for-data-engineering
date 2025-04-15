@@ -1,4 +1,14 @@
-WORKING WITH STRING :
+WORKING WITH STRING (Indexing/Slicing/String Concatenation/Repeatition/Built in String Method:
+**********************************************************************************************
+
+
+
+String Creation :
+To create a string in Python you need to use either single quotes or double quotes.
+                Ex.  print('hello')
+                Ex.  print('This is also a string')
+
+Variables: variablename= value or expression
 
 
 String Formatting :
