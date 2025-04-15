@@ -190,6 +190,7 @@ output : Before: ['apple', 'banana', 'mango']
 
 
 ============
+
 What is range(10)?
 range(10) is super commonly used in Python whenever you want to repeat something a specific number of times,
 or when you need to loop through a sequence of numbers.
