@@ -420,3 +420,21 @@ range            | ✅ Yes   | ✅ Yes   | ❌ No    | ✅ Yes             | ran
 
 
 
+Summary:
+1.Use a list when you expect to add/remove/change things.🧠 Lists are your "to-do" or "can change" things. Ex. Grocery Shopping Basket , Use when you want to add, remove, or change items.eg. add banana, remove milk,etc       
+            Ex. cart = ['bananas', 'milk']
+                cart.append('bread')  # add
+                cart.remove('milk')   # remove
+2.Use a tuple when the data is constant and should not change.🧠 Tuples are “set-in-stone” facts. Ex. Date of Birth, Loation's Latitude & Longitude
+            Ex. dob = (1995, 4, 16)
+            Ex. location = (28.6139, 77.2090)  # Delhi
+3.Use a set when you care only about uniqueness, not order.🧠 Sets are “don’t repeat things” collections like tags or IDs, Categories.
+            Ex. friends = {'Amit', 'Riya', 'Amit'}  # only one 'Amit' stays
+4.Use a dict when you need key-value pairs.🧠 Dictionaries are “label → value” storages. like storing properties of something like Contact/Profile
+            Ex. contact = {'name': 'Niyatee', 'age': 32, 'city': 'Manchester'}
+5.Use a range when you want to loop over numbers, cleanly.🧠 Ranges are for “do something X number of times.”
+             Ex.for i in range(1, 6):
+                print("Try number", i)
+
+
+
