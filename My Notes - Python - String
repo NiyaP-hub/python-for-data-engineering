@@ -4,80 +4,109 @@ WORKING WITH STRING (Indexing/Slicing/String Concatenation/Repeatition/Built in 
 
 
 String Creation :
-To create a string in Python you need to use either single quotes or double quotes.
-                Ex.  print('hello')
-                Ex.  print('This is also a string')
+            To create a string in Python you need to use either single quotes or double quotes.
+                            Ex.  print('hello')
+                            Ex.  print('This is also a string')
 
 Variables: variablename= value or expression
 
+              We use a single equals sign to assign labels to variables. Let's see a few examples of how we can do this.
+              The names you use when creating these labels need to follow a few rules:
+              
+              1. Names can not start with a number.
+              2. There can be no spaces in the name, use _ instead.
+              3. Can't use any of these symbols :'",<>/?|\()!@#$%^&*~-+
+              4.Are case-sensitive (Name and name are different)
+              5.Can contain letters, numbers, and underscores
 
-String Formatting :
+String Indexing:
+          
+              # Assign s as a string
+              s = 'Hello World'
+              # Print the object
+              print(s) 
+              print()  
+              
+              # Show first element (in this case a letter)
+              print(s[0])
+              print()
+              
+              # Show the second element (also a letter)
+              print(s[1])
 
-Method 1:
-========
-%s is a placeholder for a string. 
-%d is for integers
-%f is for floating point numbers
+String Concatenation & Repetation:
 
-      Exampple 1: # Single Placeholder
-                  name="Niyatee"
-                  print("My name is %s" % name)
-      
-      Example 2 : # Multiple Placeholders
-                  name="Niyatee"
-                  age=16
-                  married=True
-      print("My name is %s, my age is %d, and it is %s that I am married" % (name, age, married))
-
-
-
-Method 2: .format() method
-========
-     Example:  print("Hello, {}!".format(name))
-
-Method 3:Using 2. f-strings (Python 3.6+ — most preferred!)
-========
-What is an f-string?
-f-string stands for formatted string literal.
-You add an f before your string and put variables inside {} — Python will automatically replace them with their values.
-
-      Example 1: print(f"My name is {name}, my age is {age}. Married :{married}")
-                 output : My name is Niyatee, my age is 16.Married :True
-
-      Example 2: print(f"My age is {age}. In 5 years I will be {age + 5}")   
-                 output : My age is 16. In 5 years I will be 21
-
-
-===================================================================================================================================
-
-WORKING WITH ARITHMATIC :
-
-2**4 means 2 raised to the power of 4 i.e. 2*2*2*2 =16
-
-Order of Operations in Python = PEMDAS
-
-PEMDAS	                               BODMAS	                                        Meaning
-P = Parentheses	                         B = Brackets	                                  () → Grouping
-E = Exponents	                         O = Orders	                                        Powers/Roots (2**3, √9)
-MD = Multiplication & Division	       DM = Division & Multiplication	                Left to right
-AS = Addition & Subtraction	             AS = Addition & Subtraction	                      Left to right
+              # concatenation (addition)
+              
+              s1 = 'Hello'
+              s2 = "World"
+              print(s1 + " " + s2)
+              
+              # repetition (multiplication)
+              
+              print("Hello_" * 5)
+              print("-" * 10)
 
 
-WORKING WITH VARIABLES  :
+String Arithmatic :
 
-We use a single equals sign to assign labels to variables. Let's see a few examples of how we can do this.
-The names you use when creating these labels need to follow a few rules:
+              2**4 means 2 raised to the power of 4 i.e. 2*2*2*2 =16. Order of Operations in Python = PEMDAS
+              
+              PEMDAS	                               BODMAS	                                        Meaning
+              P = Parentheses	                         B = Brackets	                                  () → Grouping
+              E = Exponents	                         O = Orders	                                        Powers/Roots (2**3, √9)
+              MD = Multiplication & Division	       DM = Division & Multiplication	                Left to right
+              AS = Addition & Subtraction	             AS = Addition & Subtraction	                      Left to right
 
-1. Names can not start with a number.
-2. There can be no spaces in the name, use _ instead.
-3. Can't use any of these symbols :'",<>/?|\()!@#$%^&*~-+
-4.Are case-sensitive (Name and name are different)
-5.Can contain letters, numbers, and underscores
+String Functions:
 
+                len(s) → Get length
+                s.upper() / s.lower() → Change case
+                s.strip() → Trim whitespace
+                s.replace("old", "new")
+                s.split(" ") → Split into list
 
-===================================================================================================================================
+String Formatting/Print Formatting :
+
+                  
+                  Method 1:
+                  ========
+                  %s is a placeholder for a string. 
+                  %d is for integers
+                  %f is for floating point numbers
+                  
+                        Exampple 1: # Single Placeholder
+                                    name="Niyatee"
+                                    print("My name is %s" % name)
+                        
+                        Example 2 : # Multiple Placeholders
+                                    name="Niyatee"
+                                    age=16
+                                    married=True
+                        print("My name is %s, my age is %d, and it is %s that I am married" % (name, age, married))
+                  
+                  
+                  
+                  Method 2: .format() method
+                  ========
+                       Example:  print("Hello, {}!".format(name))
+
+                  Method 3:Using 2. f-strings (Python 3.6+ — most preferred!)
+                  ========
+                  What is an f-string?
+                  f-string stands for formatted string literal.
+                  You add an f before your string and put variables inside {} — Python will automatically replace them with their values.
+                  
+                        Example 1: print(f"My name is {name}, my age is {age}. Married :{married}")
+                                   output : My name is Niyatee, my age is 16.Married :True
+                  
+                        Example 2: print(f"My age is {age}. In 5 years I will be {age + 5}")   
+                                   output : My age is 16. In 5 years I will be 21
+                  
+
 
 WORKING WITH DATA TYPES and DATA STRUCTURES
+**********************************************************************************************
 
 🔹 1. Data Types (Basic types of individual values)
 
