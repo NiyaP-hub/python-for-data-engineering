@@ -60,8 +60,8 @@ Note: In python indentation is very important.Python needs the print(i) line to 
 2. For Loop using tuple:
 
             coords = (10, 20, 30)
-            for val in coords:
-                print(val)
+            for i in coords:
+                print(i)
 
 3. For Loop using set:
 
