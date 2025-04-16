@@ -35,9 +35,11 @@ Syntax:  for item in iterable:
 
 Using FOR LOOP with different object types in Python:
 ------------------------------------------------------------------------------
+**********
 Note: In python indentation is very important.Python needs the print(i) line to be indented to show it's part of the for loop. Otherwise, you'll get an IndentationError.
       🧱 When do you indent in Python?
-      ✅ You indent after any line that ends with a colon (:).
+      ✅ You indent after any line that ends with a colon (:). Always indent the code inside the loop or conditional by 4 spaces or 1 tab.
+
 
             Situation                      | Example
             if, elif, else                 | if x > 0:
@@ -46,6 +48,8 @@ Note: In python indentation is very important.Python needs the print(i) line to 
             def (function)                 | def greet():
             class                          | class Dog:
             try, except, etc.              | try:, except:
+
+***********
 
 1. For Loop using list:
 
@@ -62,9 +66,10 @@ Note: In python indentation is very important.Python needs the print(i) line to 
 3. For Loop using set:
 
             colors = {'red', 'blue', 'green'}
-            for color in colors:
+            for color in colors:          
                 print(color)
-            # Note: Order is NOT guaranteed
+            # Note: Order is NOT guaranteed. 
+            # Note: color is just a variable name, not pre-defined, can be anything.
 
 4. For Loop using dict:
 
