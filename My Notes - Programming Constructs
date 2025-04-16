@@ -1,1 +1,69 @@
+PYTHON PROGRAMMING CONSTRUCTS:
+
+
+Construct Type           | What It Does                        | Example
+1. Sequential            | Runs code line by line in order     | Normal top-to-bottom execution
+2. Conditional           | Makes decisions (if, elif, else)    | Runs code only if condition is true
+3. Looping (Iteration)   | Repeats code using for or while     | Useful for repeating tasks
+4. Control Statements    | Alters flow: break, continue, pass  | Skips or stops loops
+5. Functions             | Reusable blocks of code (def)       | Makes code clean & modular
+6. Exception Handling    | Manages errors with try, except     | Prevents crashes on errors
+7. Classes/Objects       | Object-oriented programming         | Models real-world things
+
+
+1. Sequential Execution:
+
+      print("Start")
+      x = 5 + 3
+      print("Result:", x)
+      # Runs line by line
+
+2. Conditional (if, elif, else):
+      x = 10
+      if x > 0:
+          print("Positive")
+      elif x == 0:
+          print("Zero")
+      else:
+          print("Negative")
+
+3. Loops (for, while): A for loop acts as an iterator in Python, it goes through items that are in a sequence or any other iterable item. 
+                      Objects that we've learned about that we can iterate over include strings,lists,tuples, and even built in iterables for dictionaries, such as the keys or values.
+
+Syntax:  for item in object:
+         statements to do stuff
+
+     Ex. # for loop
+      for i in range(3):
+          print("Hello", i)
+       -----     
+     Ex. # while loop
+      count = 0
+      while count < 3:
+          print("Hi", count)
+          count += 1
+
+4. Control Statements:
+
+      for i in range(5):
+          if i == 3:
+              break   # stops the loop
+          if i == 1:
+              continue  # skips this iteration
+          print(i)
+      
+5.Functions:
+
+
+
+
+6. Exception Handling:
+        
+        try:
+            x = 10 / 0
+        except ZeroDivisionError:
+            print("You can't divide by zero!")
+        
+7. Classes and Objects
+
 
