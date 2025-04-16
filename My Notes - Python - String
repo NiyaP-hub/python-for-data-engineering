@@ -437,12 +437,22 @@ Summary:
                 print("Try number", i)
 
 Note : SET is not indexed
-s = {10, 20, 30}
-print(s[0])  # ❌ TypeError: 'set' object is not subscriptable.Python says: "You can't access a set item by index because I don't know what 'first' even means here!"
+        s = {10, 20, 30}
+        print(s[0])  # ❌ TypeError: 'set' object is not subscriptable.Python says: "You can't access a set item by index because I don't know what 'first' even means here!"
 ✅ If You Really Need Indexing, Convert It
-s = {10, 20, 30}
-s_list = list(s)
-print(s_list[0])  # Now this works as you converted it into a list, but order is not guaranteed
+        s = {10, 20, 30}
+        s_list = list(s)
+        print(s_list[0])  # Now this works as you converted it into a list, but order is not guaranteed
+(Optional) Sorting the set before converting
+        my_set = {3, 1, 5, 2}
+        sorted_list = sorted(my_set)
+        print(sorted_list[0])  # Output: 1
+
+*Sorted is a built in Python function that works with any iterable including List, tuple, set, dic (sorts keys by default) and strings
+
+
+
+
 
 
 
