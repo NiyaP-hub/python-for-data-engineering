@@ -411,12 +411,12 @@ A tuple is a built-in data structure in Python that:
 
 🧾 Python Data Structures Comparison Table
 
-Data   Structure | Ordered? | Indexed? | Mutable? | Allows Duplicates? | Syntax | Use Case
-list             | ✅ Yes   | ✅ Yes   | ✅ Yes   | ✅ Yes             | [1, 2, 3]| For dynamic, ordered collections where items change
-tuple | ✅ Yes | ✅ Yes | ❌ No | ✅ Yes | (1, 2, 3) | For fixed, ordered groups like coordinates or constants
-set | ❌ No | ❌ No | ✅ Yes | ❌ No | {1, 2, 3} | For storing unique items without caring about order
-dict | ✅ Yes | ✅ (by key) | ✅ Yes | Keys: ❌, Values: ✅ | {'a': 1} | For mapping key-value pairs (e.g., name: age)
-range | ✅ Yes | ✅ Yes | ❌ No | ✅ Yes | range(0, 5) | For looping over numbers without storing them all
+Data   Structure | Ordered? | Indexed? | Mutable? | Allows Duplicates? | Syntax     | Use Case
+list             | ✅ Yes   | ✅ Yes   | ✅ Yes   | ✅ Yes             | [1, 2, 3]  | For dynamic, ordered collections where items change
+tuple            | ✅ Yes   | ✅ Yes   | ❌ No    | ✅ Yes             | (1, 2, 3)  | For fixed, ordered groups like coordinates or constants
+set              | ❌ No    | ❌ No    | ✅ Yes   | ❌ No              | {1, 2, 3}  | For storing unique items without caring about order
+dict             | ✅ Yes   | ✅ Yes   | ✅ Yes   | Keys: ❌, Values: ✅ | {'a': 1} | For mapping key-value pairs (e.g., name: age)
+range            | ✅ Yes   | ✅ Yes   | ❌ No    | ✅ Yes             | range(0, 5)| For looping over numbers without storing them all
 
 
 
