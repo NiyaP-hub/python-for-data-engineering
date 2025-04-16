@@ -436,5 +436,14 @@ Summary:
              Ex.for i in range(1, 6):
                 print("Try number", i)
 
+Note : SET is not indexed
+s = {10, 20, 30}
+print(s[0])  # ❌ TypeError: 'set' object is not subscriptable.Python says: "You can't access a set item by index because I don't know what 'first' even means here!"
+✅ If You Really Need Indexing, Convert It
+s = {10, 20, 30}
+s_list = list(s)
+print(s_list[0])  # Now this works as you converted it into a list, but order is not guaranteed
+
+
 
 
