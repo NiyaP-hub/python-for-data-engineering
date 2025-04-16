@@ -1,3 +1,13 @@
+
+
+ Everything in Python is an object!!!
+***********-=========-***************
+
+
+
+
+
+
 WORKING WITH STRING (Indexing/Slicing/String Concatenation/Repeatition/Built in String Method:
 **********************************************************************************************
 
@@ -274,6 +284,10 @@ Dictionary Operations:
                                   "grades": [85, 90, 78],
                                   "is_active": True
                             }
+6.Printing a Dictionary 
+                      print(my_dict)
+                      my_dict(key1) # Call values by their key
+
  Dictionary Methods:
 
             # Sample dictionary
@@ -296,64 +310,66 @@ Dictionary Operations:
                                my_dict['key1']=123
                                my_dict['key1'] = my_dict['key1'] + 123
 
-====================================================================
 
-Object Types in Python - Set and Boolean
+
+SET AND BOOLEAN:
+-----------------
 
 What is a Set in Python?
 A set is an unordered collection of unique elements. Think of it like a bag of distinct values — no duplicates allowed.
 
-my_set = {1, 2, 3, 2, 1}
-print(my_set)  # Output: {1, 2, 3}
+            my_set = {1, 2, 3, 2, 1}
+            print(my_set)  # Output: {1, 2, 3}
 
-✅ Why does it still output {1, 2, 3}?
-Because a set automatically removes duplicates.
-Even though we typed repeated values (2, 1), Python internally stores only the unique elements.
-So yes — the original input has duplicates, but the resulting set doesn't. That's exactly how sets work!
+            ✅ Why does it still output {1, 2, 3}?
+            Because a set automatically removes duplicates.
+            Even though we typed repeated values (2, 1), Python internally stores only the unique elements.
+            So yes — the original input has duplicates, but the resulting set doesn't. That's exactly how sets work!
 
 
-a = {1, 2, 3}
-b = {3, 4, 5}
+            x = set()        # Creates an empty set
+            x.add(1)         # Adds the value 1 to the set
+            print(x)         # or just write x in an interactive shell to see the result
+            Note : If you try x.add(1) again, it won’t duplicate it — because sets only store unique elements.
+            
+            We can cast a list with multiple repeat elements to a set to get the unique elements. For example:
+            # Create a list with repeats
+                l = [1,1,2,2,3,4,5,6,1,1]
+            # Cast as set to get unique values
+                set(l)
+SET Operations:
 
-print(a.union(b))        # {1, 2, 3, 4, 5}
-print(a.intersection(b)) # {3}
-print(a.difference(b))   # {1, 2}
+            a = {1, 2, 3}
+            b = {3, 4, 5}
+            
+            print(a.union(b))        # {1, 2, 3, 4, 5}
+            print(a.intersection(b)) # {3}
+            print(a.difference(b))   # {1, 2}
+            a.add(6)                 # Adds 6 to the set
+            a.remove(2)              # Removes 2
 
-a.add(6)      # Adds 6 to the set
-a.remove(2)   # Removes 2
 
------
-x = set()        # Creates an empty set
-x.add(1)         # Adds the value 1 to the set
-print(x)         # or just write x in an interactive shell to see the result
-Note : If you try x.add(1) again, it won’t duplicate it — because sets only store unique elements.
 
-We can cast a list with multiple repeat elements to a set to get the unique elements. For example:
-# Create a list with repeats
-    l = [1,1,2,2,3,4,5,6,1,1]
-# Cast as set to get unique values
-    set(l)
------
 
 
 What is a Boolean in Python?
 A Boolean (or bool) represents True or False — just two values.
 
-✅ Example:
-
-is_active = True
-is_logged_in = False
-
-Booleans are often used in conditions:
-            if is_active:
-                print("User is active.")
-
-You also get Boolean results from comparisons:
-    
-            print(5 > 3)        # True
-            print(10 == 5)      # False
-            print("a" in "cat") # True
-
+            ✅ Example:
+            
+            is_active = True
+            is_logged_in = False
+            
+            Booleans are often used in conditions:
+                        if is_active:
+                            print("User is active.")
+            
+            You also get Boolean results from comparisons:
+                
+                        print(5 > 3)        # True
+                        print(10 == 5)      # False
+                        print("a" in "cat") # True
+            
 
 
 What is range()?
@@ -375,5 +391,32 @@ Use Cases:
                   items = ['apple', 'banana', 'cherry']
                   for i in range(len(items)):
                       print(f"Item {i}: {items[i]}")
+
+
+
+TUPLE:
+--------
+
+A tuple is a built-in data structure in Python that:
+            
+            ✅ Is ordered
+            ❌ Is immutable (you can't change it after creation)
+            ✅ Allows duplicates
+            ✅ Is indexed (like lists)
+
+            Ex.
+            my_tuple = ('apple', 'banana', 'cherry')
+            print(my_tuple[1])  # Output: banana
+
+
+🧾 Python Data Structures Comparison Table
+
+Data   Structure | Ordered? | Indexed? | Mutable? | Allows Duplicates? | Syntax | Use Case
+list             | ✅ Yes   | ✅ Yes   | ✅ Yes   | ✅ Yes             | [1, 2, 3]| For dynamic, ordered collections where items change
+tuple | ✅ Yes | ✅ Yes | ❌ No | ✅ Yes | (1, 2, 3) | For fixed, ordered groups like coordinates or constants
+set | ❌ No | ❌ No | ✅ Yes | ❌ No | {1, 2, 3} | For storing unique items without caring about order
+dict | ✅ Yes | ✅ (by key) | ✅ Yes | Keys: ❌, Values: ✅ | {'a': 1} | For mapping key-value pairs (e.g., name: age)
+range | ✅ Yes | ✅ Yes | ❌ No | ✅ Yes | range(0, 5) | For looping over numbers without storing them all
+
 
 
