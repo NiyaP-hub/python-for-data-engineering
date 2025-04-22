@@ -303,3 +303,14 @@ Now you can import like:
       from my_app.auth import login
       from my_app.payments.gateway import process_payment
 
+
+NAMESPACE:
+A namespace is like a labeled box that holds names (like variables, functions, classes) and keeps them organized so they don’t clash with each other.
+
+Namespace Type	What it holds
+------------------------------------------------------------
+Built-in	      Python's core functions like len(), print()
+Global	      Names defined at the top level of your script
+Local	            Names inside a function or method
+Module	      Names defined inside a specific imported module
+
