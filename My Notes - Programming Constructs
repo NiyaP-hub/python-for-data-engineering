@@ -314,3 +314,53 @@ Global	      Names defined at the top level of your script
 Local	            Names inside a function or method
 Module	      Names defined inside a specific imported module
 
+Example :
+mall_management/
+│
+├── billing.py                      ← a module (file)
+└── customer_service/               ← a package (folder)
+    ├── __init__.py                 ← tells Python it's a package
+    └── feedback.py                 ← another module inside a sub-package
+
+📝 Code Inside the Files:
+billing.py
+-----------------
+def calculate_bill():           //function inside billing.py module
+    print("Billing in progress")
+
+customer_service/feedback.py
+-------------------
+def submit_review():          //submit_review() and handle_complaint() are function inside customer_service/feedback.py module
+    print("Review submitted successfully")
+
+def handle_complaint():
+    print("Complaint is being handled")
+
+
+✅ Now, in your main script (maybe main.py), you can write:
+
+import billing                             //You are importing the entire billing.py module.
+from customer_service import feedback     //You’re going into the customer_service package and importing the feedback.py module specifically.
+
+billing.calculate_bill()        # Output: Billing in progress
+feedback.submit_review()        # Output: Review submitted successfully
+feedback.handle_complaint()     # Output: Complaint is being handled
+
+
+
+
+
+
+Package:
+mall_management/
+    __init__.py
+    billing.py
+    inventory.py
+    customer_service/
+        __init__.py
+        feedback.py
+        queries.py
+This entire folder structure is your package.
+Each .py file is a module.
+Each has its own namespace.
+
