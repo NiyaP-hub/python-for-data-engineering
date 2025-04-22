@@ -314,6 +314,8 @@ Global	      Names defined at the top level of your script or module	   x = 5 de
 Local	            Names inside a function or method	                           x = 10 defined inside my_func()
 Module	      Names defined inside an imported module	                     math.sqrt(), billing.calculate_bill()
 
+🔁 Example: Using Different Namespaces
+
 # billing.py
 def calculate_bill(): 
     print("Billing in progress")
@@ -322,19 +324,20 @@ def calculate_bill():
 def calculate_bill(): 
     print("Handling customer feedback")
 
-Now you import both:
-
+Usage - Now you import both:
+------------
 import billing
 from customer_service import feedback
 
 billing.calculate_bill()       # Output: Billing in progress
 feedback.calculate_bill()      # Output: Handling customer feedback
 
-Same function name, but no confusion—thanks to namespaces (billing. vs feedback.).
-
+✅ Even though the function name is the same, there's no conflict because they're in different namespaces (billing. vs feedback.).
 
 ------
-Another Example :
+Another Example : Modules, Packages, and Namespaces
+📁 Folder Structure:
+
 mall_management/
 │
 ├── billing.py                      ← a module (file)
@@ -366,7 +369,7 @@ billing.calculate_bill()        # Output: Billing in progress
 feedback.submit_review()        # Output: Review submitted successfully
 feedback.handle_complaint()     # Output: Complaint is being handled
 
-
+----------------
 
 Package:
 mall_management/
@@ -379,5 +382,8 @@ mall_management/
         queries.py
 This entire folder structure is your package.
 Each .py file is a module.
-Each has its own namespace.
+Each module has its own namespace.
+__init__.py tells Python that the folder should be treated as a package. It can be empty or used for setup code.
+
+
 
