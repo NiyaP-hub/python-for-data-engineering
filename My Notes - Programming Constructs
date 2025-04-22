@@ -307,14 +307,34 @@ Now you can import like:
 NAMESPACE:
 A namespace is like a labeled box that holds names (like variables, functions, classes) and keeps them organized so they don’t clash with each other.
 
-Namespace Type	What it holds
-------------------------------------------------------------
-Built-in	      Python's core functions like len(), print()
-Global	      Names defined at the top level of your script
-Local	            Names inside a function or method
-Module	      Names defined inside a specific imported module
+Namespace Type	What It Holds	                                              Example
+------------------------------------------------------------------------------------------------------
+Built-in	      Python’s core functions and names	                           print(), len()
+Global	      Names defined at the top level of your script or module	   x = 5 defined outside a function
+Local	            Names inside a function or method	                           x = 10 defined inside my_func()
+Module	      Names defined inside an imported module	                     math.sqrt(), billing.calculate_bill()
 
-Example :
+# billing.py
+def calculate_bill(): 
+    print("Billing in progress")
+
+# customer_service/feedback.py
+def calculate_bill(): 
+    print("Handling customer feedback")
+
+Now you import both:
+
+import billing
+from customer_service import feedback
+
+billing.calculate_bill()       # Output: Billing in progress
+feedback.calculate_bill()      # Output: Handling customer feedback
+
+Same function name, but no confusion—thanks to namespaces (billing. vs feedback.).
+
+
+------
+Another Example :
 mall_management/
 │
 ├── billing.py                      ← a module (file)
@@ -345,9 +365,6 @@ from customer_service import feedback     //You’re going into the customer_ser
 billing.calculate_bill()        # Output: Billing in progress
 feedback.submit_review()        # Output: Review submitted successfully
 feedback.handle_complaint()     # Output: Complaint is being handled
-
-
-
 
 
 
