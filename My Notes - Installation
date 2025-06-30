@@ -87,6 +87,33 @@ Step 2: Install jupyter notebook
               Without the Jupyter extension, you won’t get the notebook UI (cells, run buttons, output areas, markdown formatting, etc.) in VS Code.
               
               
+-----
+
+| 🔍 Feature        | **Jupyter Notebook (Local)**                                            | **Google Colab (Online)**                                                           |
+| ----------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Where it runs** | On your **local computer**                                              | In the **cloud (Google servers)**                                                   |
+| **Setup needed**  | Yes — you need to install Python, Jupyter (usually via Anaconda or pip) | No setup — just open [colab.research.google.com](https://colab.research.google.com) |
+| **Storage**       | Files are saved on your local disk                                      | Files can be saved to **Google Drive**                                              |
+| **Resources**     | Limited to your computer’s CPU/RAM                                      | Free access to **GPU/TPU** & more RAM (upgrade options via Colab Pro)               |
+| **Collaboration** | Harder — must share files manually                                      | **Real-time collaboration** like Google Docs                                        |
+| **Speed**         | Depends on your machine                                                 | Often faster for big tasks due to cloud compute                                     |
+| **Offline use**   | Yes                                                                     | No (needs internet)                                                                 |
+| **Customization** | Fully customizable environment (install any package, use VS Code, etc.) | Some limitations on packages and filesystems                                        |
+| **Best for**      | When you need full control or working with sensitive data               | Quick prototyping, ML, data science, and team collaboration                         |
+
+
+✅ When to use each:
+Use Jupyter Notebook (local) if:
+You want full control over environment and files
+You’re working offline or with large datasets not suited for cloud
+You have strict data privacy needs
+
+Use Google Colab if:
+
+You want to start quickly without installing anything
+You’re collaborating with others
+You need free GPU access (e.g., for ML)
+
 
 
 
