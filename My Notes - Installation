@@ -19,7 +19,14 @@ Step 1: Intsall Python (This is the programming language itself.)
             Once installed, open terminal and try:
              
                python3 -m pip install pandas
-      Option 2: Install via Homebrew
+
+ Breakdown:
+            python3: This explicitly tells your system to use Python version 3 (instead of Python 2, which some systems still have).
+            -m pip: Runs the pip module as a script. This ensures you're using the pip version associated with python3, avoiding version mismatch issues.
+            install pandas: Tells pip to download and install the pandas library from PyPI (Python Package Index).
+              
+
+    Option 2: Install via Homebrew
 
               brew install python  //install python using brew
               which python3  // Check Your Python Version & Location. Output should show : /opt/homebrew/bin/python3
