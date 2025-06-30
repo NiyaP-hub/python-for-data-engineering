@@ -48,7 +48,7 @@ python3 -m ensurepip --upgrade   // This asks Python to install pip if it’s mi
 
 python3 -m pip install pandas  //next , install pandas
 
-===============================EXECUTING PYTHON CODE=====================
+=============================== 3 METHODS OF EXECUTING PYTHON CODE=====================
 
 OPTION 1: TO EXECUTE CODE IN Visual Studio Code :
 
